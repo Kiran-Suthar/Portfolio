@@ -1,2 +1,4 @@
-# Portfolio
-I developed this portfolio website using HTML5, CSS and JavaScript.
+
+This portfolio is still a work in progress!
+
+To view the website visit: https://kiran-suthar.github.io/Portfolio/
