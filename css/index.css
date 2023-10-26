@@ -114,14 +114,12 @@ body {
 }
 .skills_page{
   opacity: 0;
-  /* filter: blur(5px); */
   transform: translateX(-600px);
   transition: all 1s;
   transition-delay: 0.4s;
 }
 .scroll-skills_page {
   opacity: 1;
-  /* filter: blur(0); */
   transform: translateX(0);
 }
 /* Education Page CSS */
@@ -231,7 +229,6 @@ body {
 }
 .flex-container2 {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   font-size: medium;
   text-align: center;
