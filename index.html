@@ -3,319 +3,501 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="title logo/icons8-kappa-100.png" type="image/png">
-    <!-- Boxicons CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="linericon/style.css">
-</head>
     <title>Kiran Suthar</title>
-    <!-- main css -->
-    <link rel="stylesheet" href="CSS/Style.css">
-    <link rel="stylesheet" href="CSS/responsive.css">
+    <!-- Main CSS Link -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Icons Link -->
+    <link rel="stylesheet" href="linericon/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav>
-    <div class="navbar">
-      <i class='bx bx-menu'></i>
-      <div class="logo">
-        <a href="#html"><img class="img" src="img/icons8-circled-k-50.png" alt=""></a>
-      </div>
-      <div class="nav-links">
-        <div class="sidebar-logo">
-          <span class="logo-name"></span>
-          <i class='bx bx-x' ></i>
+    <!-- Navbar -->
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header justify-content-end">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <ul class="links">
-          <li><a href="#html">Home</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Educations">Educations</a></li>
-          <li><a href="#Projects">Projects</a></li>
-          <li><a href="#">About us</a></li>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 p-3" style="font-size: medium; font-weight: bold;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#project">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#about us">About Us</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+<nav  class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background: -webkit-linear-gradient(top left, #50a3a2 0%, #70e2b2 100%);">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a href="index.html"><img class="rounded-circle" height="30" src="img/icons8-circled-k-50.png" alt=""></a>
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+        </button>
+    </div>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse w-100 justify-content-end" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="nav navbar-nav">
+            <li class="nav-item px-2">
+                <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link text-white" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link text-white" href="#education">Educations</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link text-white" href="#project">Projects</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link text-white" href="#about us">About us</a>
+            </li>
         </ul>
+        <!-- Left links -->
+    </div>
+    
+    <!-- Collapsible wrapper -->
+    <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+<!-- Home Page -->
+<div id="about us" class="container rounded-3 bg-white" style="margin-top: 100px;">
+    <div class="d-flex flex-wrap mb-3 pt-5 justify-content-center">
+        <div class="p-3">
+            <div class="d-flex flex-column mb-3 flex-fill">
+                <div class="p-2">
+                    <img src="img/My project.jpg" class="img">
+                </div>
+                <div class="flex-fill">
+                    <a href="Kiran suthar CV.pdf" class="DownloadBtn text-decoration-none px-5" download>  
+                        <i class="fa fa-download p-1"></i>
+                        Download Resume 
+                    </a> 
+                </div>
+            </div>
+        </div>
+        <div class="py-4 px-4 flex-wrap">
+            <h6 class="front-end">Front-end Developer</h6>
+            <h3 class="name">Kiran Suthar</h3>
+            <p class="objective">My expertise is resolving design problems, building smart user interfaces and useful interactions, developing rich web applications and web experiences.</p>
+            <ul class="basic_info">
+                <li><a href="#"><i class="lnr lnr-calendar-full"></i> 1st july, 1997</a></li>
+                <li><a href="#"><i class="lnr lnr-phone-handset"></i> (+91) 9680456166</a></li>
+                <li><a href="#"><i class="lnr lnr-envelope"></i> kiran.bijowa@gmail.com</a></li>
+                <li><a href="#"><i class="lnr lnr-home"></i>Pratapbazar, Rani, rajasthan.</a></li>
+            </ul>
+            <ul class="personal_social">
+                <li><a href="https://www.linkedin.com/in/kiran-suthar-aa65a2181/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/Kiran-Suthar"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://accounts.google.com/"><i class="fab fa-google"></i></a></li>
+            </ul>
+            <a href = "Kiran suthar CV.pdf" download>
+              <button class="btn1"><i class="fa fa-download"></i>Download Resume</button>
+            </a>
+        </div>
+      </div>
+</div>
+<!-- Home Page End -->
+
+<!-- Skiils Page -->
+<div id="skills" class="container mt-5">
+    <h1 class="text-white p-4 skills">Tech Skills</h1>
+    <div class="d-flex flex-row mb-3 flex-wrap gap-3 justify-content-center skills_page">
+        <div class="p-2 bg-white rounded-3" style="width: 220px;">
+            <div class="d-flex flex-column mb-3">
+                <div class="p-3 text-center ab"><h6 class="">Version Control</h6></div>
+                <div class="p-2">
+                    <div class="px-2 py-3">
+                        <img class="rounded-circle mx-2" height="50" src="img/Skills/images (3).png" alt="">
+                        Git
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-2 bg-white rounded-3">
+            <div class="d-flex flex-column mb-3">
+                <div class="p-3 text-center ab"><h6>Frameworks</h6></div>
+                <div class="px-2 py-3">
+                    <img class="rounded-3 mx-2" height="50" src="img/Skills/bootstrap.jpg" alt="">
+                    Bootstrap
+                </div>
+                <div class="px-2 py-3">
+                    <img class="rounded-3 mx-2" height="30" src="img/Skills/tailwind-css-icon.png" alt="">
+                    Tailwind CSS
+                </div>
+                <div class="px-2 py-3">
+                    <img class="rounded-3 mx-2" height="50" src="img/Skills/React Bootstrap.png" alt="">
+                    React Bootstrap
+                </div>
+            </div>
+        </div>
+        <div class="p-2 bg-white rounded-3" style="width: 220px;">
+            <div class="d-flex flex-column mb-3">
+                <div class="p-3 text-center ab"><h6>Scripting Languages</h6></div>
+                <div class="px-2 py-3">
+                    <img class="rounded-3 mx-2" height="50" src="img/Skills/html-5.png" alt="">
+                    HTML
+                </div>
+                <div class="px-2 py-3">
+                    <img class="rounded-3 mx-2" height="50" src="img/Skills/css-3.png" alt="">
+                    CSS
+                </div>
+                <div class="px-2 py-3">
+                    <img class="rounded-3 mx-2" height="50" src="img/Skills/java-script.png" alt="">
+                    JavaScript
+                </div>
+                <div class="px-2 py-3">
+                    <img class="rounded-3 mx-2" height="50" src="img/Skills/react.png" alt="">
+                    React js
+                </div>
+            </div>
+        </div>
+        <div class="p-2 bg-white rounded-3" style="width: 220px;">
+            <div class="d-flex flex-column mb-3">
+                <div class="p-3 text-center ab"><h6>Hosting Platform</h6></div>
+                <div class="px-2 py-3">
+                    <img class="rounded-3 mx-2" height="50" src="img/Skills/github-icon.png" alt="">
+                    Github Pages
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Skills Page End -->
+
+<!-- Educations Page -->
+<div id="education" class="container-fluid bg-dark my-5 h-auto ">
+    <div class="text-center py-5">
+        <a id="btn1" class="education active">Education</a>&nbsp; &nbsp;
+        <a id="btn2" class="experiances">Internship</a>
+    </div>
+    <div class="container-lg pb-5">
+        <img id="img1" class="img1" src="img/icons-education.png" alt="">
+        <img id="img2" class="img2" src="img/experinces-icon.png" alt=""><br>
+        <div class="vl"></div><br>
+        <!-- Education -->
+        <div id="education1" class="my-element mb-4">
+            <div class="flex-container">
+                <div class="flex-item-left"><div class="circle"></div></div>
+                <div class="flex-item-right">
+                    <label class="text-white-50">2018 - 2020</label>
+                    <h5>MASTER OF COMPUTER APPLICATION</h5>
+                    <p>Geetanjali Institute of Technical Studies, Udaipur.(RTU University, Kota)</p>
+                </div>
+            </div>
+            <div class="flex-container1">
+                <div class="flex-item-left"><div class="circle"></div></div>
+                <div class="flex-item-right">
+                    <label class="text-white-50">2015 - 2018</label>
+                    <h5>BACHELOR OF COMPUTER APPLICATION</h5>
+                    <p class="p2">Leela Devi Parasmal Sancheti Kanya Mahavidyalaya, Pali. (JNVU University, Jodhpur)</p>
+                </div>
+            </div>
+            <div class="flex-container1">
+                <div class="flex-item-left"><div class="circle"></div></div>
+                <div class="flex-item-right">
+                    <label class="text-white-50">2014 - 2015</label>
+                    <h5>12th</h5>
+                    <p class="p2">Sri Prashwanath Jain Vidyalaya, Varkana, Pali (RBSE)</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Experiances -->
+        <div id="experiances1" style="display: none; height: 450px;">
+            <div class="flex-container" >
+                <div class="flex-item-left"><div class="circle"></div></div>
+                <div class="flex-item-right">
+                    <label class="text-white-50">(17-Mar-2020 - 09-Feb-2021)</label>
+                    <h5>Web Developer</h5>
+                    <p class="p2">iPrimitus Consultancy Services LLP from Bengaluru </p>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+<!-- Educations Page End-->
+
+<!-- Projects Page -->
+    <h1 id="project" class="text-white mt-5 p-4 text-center text-decoration-underline">Projects</h1>
+    <div class="container project_animation p-3 bg-success bg-opacity-10">
+        <div class="flex-container2 gap-3 ">
+            <div class="flex-left">
+                <div class="slideshow-container">
+                    <a><img class="Image1" src="img/ProjectImages/project1/IMG_1556.png" alt=""></a>
+                    <div class="overlay">
+                        <div class="text-center py-3">
+                            <h5 class="mb-3">Online shopping sites.</h5>
+                            <button class="Details rounded-2 py-1" href="#Online Shopping" data-bs-toggle="modal" data-bs-target="#exampleModal">PROJECTS DETAILS</button>
+                            <div class="row my-2 p-3">
+                                <div class="col" style="text-align: left;">
+                                    <a class="rounded-2 live" href=" https://kiran-suthar.github.io/Shopping_site/" target="_blank">SEE LIVE</a>
+                                </div>
+                                <div class="col">
+                                    <a class="rounded-2 live" href="https://github.com/Kiran-Suthar/Shopping_site" target="_blank">SOURCE CODE</a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="flex-center">
+                <div class="slideshow-container1">
+                    <a><img class="Image2" src="img/ProjectImages/project2/IMG_1574.jpg" alt=""></a>
+                      <div class="overlay">
+                        <div class="text-center py-3">
+                            <h5 class="mb-3">Online pizza ordering sites.</h5>
+                            <button class="Details rounded-2 py-1" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1">PROJECTS DETAILS</button>
+                            <div class="row my-2 p-3">
+                                <div class="col" style="text-align: left;">
+                                    <a class="rounded-2 live" href="#">SEE LIVE</a>
+                                </div>
+                                <div class="col">
+                                    <a class="rounded-2 live" href="#">SOURCE CODE</a>
+                                </div>
+                            </div>
+                        </div> 
+                      </div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <div class="slideshow-container2">
+                    <a><img class="Image3" src="img/ProjectImages/MisranBuilders.png" alt=""></a>
+                    <div class="overlay">
+                      <div class="text-center py-3">
+                        <h5 class="mb-3">Contact form send email with captcha validation.</h5>
+                        <button class="Details rounded-2 py-1" href="#" style="width: 320px;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal2">PROJECTS DETAILS</button>
+                            <div class="row my-2 p-3">
+                                <div class="col" style="text-align: left; padding-left: 40px;">
+                                    <a class="rounded-2 live" href="https://misranbuilders.com/contactus.php">SEE LIVE</a>
+                                </div>
+                                <div class="col">
+                                    <a class="rounded-2 live" href="#">SOURCE CODE</a>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal -->
+<!-- shopping site -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Online shopping sites</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><span style="font-weight: bold;">Description:</span>&nbsp;An online shopping system is a process in which people (specifical customers) are being provided with the option of purchasing goods and services directly from the seller.</p>
+          <hr>
+          <span style="font-weight: bold;">Features:</span>
+          <ul type="circle">
+            <li>Provide best quality of product in low price rate.</li>
+            <li>Powered by JavaScript and CSS</li>
+            <li>Responsive Design</li>
+          </ul>
+          <hr>
+          <span style="font-weight: bold;">Tech used:</span>
+          <ul>
+            <li class="py-2">
+                <img class="mx-2" height="50" src="img/Skills/html-5.png" alt=""> HTML
+            </li>
+            <li class="py-2">
+                <img class="mx-2" height="50" src="img/Skills/css-3.png" alt=""> CSS
+            </li>
+            <li class="py-2">
+                <img class="mx-2" height="40" src="img/Skills/java-script.png" alt=""> JavaScript
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+            <a type="button" class="rounded-2 live" href="https://kiran-suthar.github.io/Shopping_site/" target="_blank">SEE LIVE</a>
+            <a type="button" class="rounded-2 live" href="https://github.com/Kiran-Suthar/Shopping_site" target="_blank">SOURCE CODE</a>
+        </div>
       </div>
     </div>
-  </nav>
-<!-- Page1 -->
-  <div class="page" id="Home">
-    <div class="container1">
-      <img src="img/My project.jpg">
-      <a href = "Kiran suthar CV.pdf" download>  
-        <button class="btn"><i class="fa fa-download"></i> Download Resume</button>  
-      </a> 
-    </div>
-    <div class="container2">
-      <h6>Front-end Developer</h6>
-      <h3>Kiran Suthar</h3>
-      <p>My expertise is resolving design problems, building smart user interfaces and useful interactions, developing rich web applications and web experiences.</p>
-      <ul class="list basic_info">
-          <li><a href="#"><i class="lnr lnr-calendar-full"></i> 1st july, 1997</a></li>
-          <li><a href="#"><i class="lnr lnr-phone-handset"></i> (+91) 9680456166</a></li>
-          <li><a href="#"><i class="lnr lnr-envelope"></i> kiran.bijowa@gmail.com</a></li>
-          <li><a href="#"><i class="lnr lnr-home"></i>Pratapbazar, Rani, rajasthan.</a></li>
-      </ul>
-      <ul class="list personal_social">
-          <li><a href="https://in.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-github"></i></a></li>
-          <li><a href="https://accounts.google.com/"><i class="fa fa-envelope"></i></a></li>
-      </ul>
-      <a href = "Kiran suthar CV.pdf" download>
-        <button class="btn1"><i class="fa fa-download"></i> Download Resume</button>
-      </a>
-    </div>
-  </div>
-<!-- Page2 -->
-<div class="page1" id="Skills">
-    <h4>My Skills</h4>
-    <div class="page1_container1">
-      <!-- <marquee direction="down">  -->
-      <table style="width:100%">
-        <tr>
-          <th><img src="img/Skills/asp.png"></th>
-          <th><img src="img/Skills/bootstrap-responsive.jpg"></th>
-          <th><img src="img/Skills/html-5.png"></th>
-        </tr>
-        <tr>
-          <td><img src="img/Skills/css-3.png"></td>
-          <td><img src="img/Skills/nodejs.png"></td>
-          <td><img src="img/Skills/images (2).png"></td>
-        </tr>
-        <tr>
-          <td><img src="img/Skills/images (3).png"></td>
-          <td><img src="img/Skills/java-script.png"></td>
-          <td><img src="img/Skills/mysql.png"></td>
-        </tr>
-        <tr>
-          <td><img src="img/Skills/php.png"></td>
-          <td><img src="img/Skills/python.png"></td>
-          <td><img src="img/Skills/react.png"></td>
-        </tr>
-      </table>
-      </marquee>
-    </div>
-<!-- Progress bar -->
-  <div class="page1_container2">
-    <h2>HTML</h2>
-    <div class="progress-bar">
-        <div class="html"><span>80%</span></div>
-    </div>
-    <h2>CSS</h2>
-    <div class="progress-bar">
-        <div class="css"><span>70%</span></div>
-    </div>
-    <h2>JavaScript</h2>
-    <div class="progress-bar">
-        <div class="javascript"><span>50%</span></div>
-    </div>
-    <h2>Asp.net</h2>
-    <div class="progress-bar">
-        <div class="asp"><span>50%</span></div>
-    </div>
-    <h2>SQL Server</h2>
-    <div class="progress-bar">
-        <div class="sql"><span>40%</span></div>
-    </div>
-    <h2>AngularJS</h2>
-    <div class="progress-bar">
-        <div class="angular"><span>20%</span></div>
-    </div>
-  </div>
 </div>
-<!-- Page3(Education/Experiences) -->
-<section class="page2" id="Educations">
-  <div class="ee">
-      <a id="btn1" class="education active">Education</a>&nbsp; &nbsp;
-      <a id="btn2" class="experiances">Internship</a>
-  </div>
-  <div class="ee1">
-    <img id="img1" class="img1" src="img/icons-education.png" alt="">
-    <img id="img2" class="img2" src="img/experinces-icon.png" alt=""><br>
-    <div class="circle c1"></div><br>
-    <div class="circle c2"></div><br>
-    <div class="circle c3"></div><br>
-    <div class="vl"></div><br>
-    <div class="education1" id="education1">
-      <table>
-        <tr>
-          <td style="text-align: right;"><p class="p1">2018 - 2020</p></td>
-          <td style="width: 80px;"></td>
-          <td style="text-align: left;">
-            <h4>MASTER OF COMPUTER APPLICATION</h4><br>
-            <p class="p2">Geetanjali Institute of Technical Studies, Udaipur. <br />(RTU University, Kota)</p>
-          </td>
-        </tr>
-        <tr>
-          <td style="text-align: right; "><p class="p1">2015 - 2018</p></td>
-          <td></td>
-          <td style="text-align: left; ">
-            <h4>BACHELOR OF COMPUTER APPLICATION</h4><br>
-            <p class="p2">Leela Devi Parasmal Sancheti Kanya Mahavidyalaya, Pali.<br />(JNVU University, Jodhpur)</p>
-          </td>
-        </tr>
-        <tr>
-          <td style="text-align: right;"><p class="p1">2014 - 2015</p></td>
-          <td></td>
-          <td style="text-align: left;">
-            <h4>12th</h4><br>
-            <p class="p2">Sri Prashwanath Jain Vidyalaya, Varkana, Pali (RBSE)</p>
-          </td>
-        </tr>
-      </table>
+<!-- Online Food -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Online shopping sites</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><span style="font-weight: bold;">Description:</span>&nbsp;This is an E-Commerce website of savoury foods, which provides user online food shopping experiances with various varieties.</p>
+          <hr>
+          <span style="font-weight: bold;">Features:</span>
+          <ul type="circle">
+            <li>Provide best quality of food in low price rate.</li>
+            <li>Powered by JavaScript and CSS</li>
+            <li>Responsive Design</li>
+          </ul>
+          <hr>
+          <span style="font-weight: bold;">Tech used:</span>
+          <ul>
+            <li class="py-2">
+                <img class="mx-2" height="50" src="img/Skills/html-5.png" alt=""> HTML
+            </li>
+            <li class="py-2">
+                <img class="mx-2" height="50" src="img/Skills/css-3.png" alt=""> CSS
+            </li>
+            <li class="py-2">
+                <img class="mx-2" height="40" src="img/Skills/java-script.png" alt=""> JavaScript
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+            <a type="button" class="rounded-2 live" href="#BCA">SEE LIVE</a>
+            <a type="button" class="rounded-2 live" href="#BCA">SOURCE CODE</a>
+        </div>
+      </div>
     </div>
-    <div class="experiances1" id="experiances1" style="display: none;">
-      <table>
-        <tr>
-          <td style="text-align: right;"><p class="p1">(17-Mar-2020 - 09-Feb-2021)</p></td>
-          <td style="width: 70px;"></td>
-          <td style="text-align: left; ">
-            <h4>Web Developer</h4><br>
-            <p class="p2">iPrimitus Consultancy Services LLP from Bengaluru </p>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+</div>
+<!-- Internship Project -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal1Labe2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Online shopping sites</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><span style="font-weight: bold;">Description:</span>&nbsp;Misran specializes in Residential Establishments, Commercial Spaces, Contracting, and other services in real estate.</p>
+          <hr>
+          <span style="font-weight: bold;">Features:</span>
+          <ul type="circle">
+            <li>Providing ready-to-buy flats and apartments</li>
+            <li>Powered by JavaScript and CSS</li>
+            <li>Responsive Design</li>
+          </ul>
+          <hr>
+          <span style="font-weight: bold;">Tech used:</span>
+          <ul>
+            <li class="py-2">
+                <img class="mx-2" height="50" src="img/Skills/html-5.png" alt=""> HTML
+            </li>
+            <li class="py-2">
+                <img class="mx-2" height="50" src="img/Skills/css-3.png" alt=""> CSS
+            </li>
+            <li class="py-2">
+                <img class="mx-2" height="40" src="img/Skills/java-script.png" alt=""> JavaScript
+            </li>
+            <li>
+                <img class="mx-2" height="50" src="img/Skills/php.png" alt=""> PHP
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+            <a type="button" class="rounded-2 live" href="https://misranbuilders.com/contactus.php" target="_blank">SEE LIVE</a>
+            <a type="button" class="rounded-2 live" href="#">SOURCE CODE</a>
+        </div>
+      </div>
     </div>
-</section>
+</div>
+<!-- Projects Page End -->
 
-<section class="page3" id="Projects">
-  <h4>Projects</h4>
-  <div class="center">
-          <div class="slideshow-container">
-              <a><img class="Image1" src="img/ProjectImages/project1/IMG_1556.jpg" alt=""></a>
-              <div class="overlay">
-                <div class="text">
-                  <h3>Online shopping sites.</h3>
-                  (MCA Project)<br>
-                  <a class="Details" href="#MCA">Read More</a>
-                </div>
-              </div>
-          </div>  
-          <div class="slideshow-container1">
-            <a><img class="Image2" src="img/ProjectImages/project2/IMG_1574.jpg" alt=""></a>
-              <div class="overlay">
-                <div class="text">
-                  <h3>Online pizza ordering sites.</h3>
-                  (BCA project)<br>
-                    <a class="Details" href="#BCA">Read More</a>
-                  </vr>
-                </div>
-              </div>
-          </div>
-          <div class="slideshow-container2">
-            <a href="https://misranbuilders.com/contactus.php"><img class="Image3" src="img/ProjectImages/MisranBuilders.png" alt=""></a>
-            <div class="overlay">
-              <div class="text">
-                <h3>Contact form send email with captcha validation.</h3>
-                <a class="Details" href="https://misranbuilders.com/contactus.php">Read More</a>
-              </div>
-            </div>
-          </div>
-  </div>
-</section>
- <!-- MY INTERESTS -->
-<section class="page4">
-  <h4>MY INTERESTS</h4>
-    <div class="divTable">
-     <div class="divRow">
-          <div class="divCell">
+<!-- Interests Page-->
+<div id="Hobbies" class="container-fluid my-5 text-center bg-dark" style="padding-bottom: 50px;">
+<h1 class="text-white p-4 text-decoration-underline">My Interests</h1>
+    <div class="container-sm d-flex flex-wrap my-5 text-white gap-5">
+        <div class="p-2">
             <div class="Hobbies">
-              <img class="h" src="img/Hobbies/pencil.png">
-              <div class="text1">Drawing</div>
+                <img class="h" src="img/Hobbies/pencil.png">
+                <div class="text1">Drawing</div>
             </div>
-          </div>
-         <div class="divCell">
-          <div class="Hobbies">
-            <img class="h" src="img/Hobbies/Dance.png">
-            <div class="text1">Dance</div>
-          </div> 
-         </div>
-         <div class="divCell">
-          <div class="Hobbies">
-            <img class="h" src="img/Hobbies/musical.png">
-            <div class="text1">Music</div>
-          </div>
-         </div>
-         <div class="divCell">
-          <div class="Hobbies">
-            <img class="h" src="img/Hobbies/badminton.png">
-            <div class="text1">Badminton</div>
-          </div>
-         </div>
-         <div class="divCell">
-          <div class="Hobbies">
-            <img class="h" src="img/Hobbies/paint.png">
-            <div class="text1">Art</div>
-          </div>
-         </div>
-     </div>
+        </div>
+        <div class="p-2">
+            <div class="Hobbies">
+                <img class="h" src="img/Hobbies/Dance.png">
+                <div class="text1">Dance</div>
+            </div> 
+        </div>
+        <div class="p-2">
+            <div class="Hobbies">
+                <img class="h" src="img/Hobbies/musical.png">
+                <div class="text1">Music</div>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="Hobbies">
+                <img class="h" src="img/Hobbies/badminton.png">
+                <div class="text1">Badminton</div>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="Hobbies">
+                <img class="h" src="img/Hobbies/paint.png">
+                <div class="text1">Art</div>
+              </div>
+        </div>
+      </div>
+</div>
+<!-- Interests Page End -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+<!-- Footer -->
+<footer class="bg-dark text-center text-white fixed">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://accounts.google.com/" role="button"><i class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/suthar._kiran01/" role="button"><i class="fab fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/kiran-suthar-aa65a2181/" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Kiran-Suthar" role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
     </div>
-</section>
-<section class="page5">
+    <!-- Grid container -->
 
-</section>
+    <!-- Copyright -->
+    <div class="text-center p-3 text-white-50" style="background-color: rgba(0, 0, 0, 0.2);">
+        Made with 🤍 by Kiran Suthar 
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
 
-<script src="JavaScript/HomePage.js"></script>
-<script>
-    document.getElementById("btn2").onclick = function() {
-        var firstDiv = document.getElementById("education1");
-        var secondDiv = document.getElementById("experiances1");
-        var img1 = document.getElementById("img1");
-        var img2 = document.getElementById("img2");
-        var btn2 = document.getElementById("btn2");
-        var btn1 = document.getElementById("btn1");
-        if (secondDiv.style.display === "none") {
-            secondDiv.style.display = "block";
-            secondDiv.style.display = "inline-block";
-            img2.style.display = "block";
-            img2.style.display = "inline-block";
-            img1.style.display = "none";
-            btn2.style.backgroundImage = "linear-gradient(0deg, #50a3a2 0%, #70e2b2 100%)";
-            btn2.style.color ="#white";
-            btn1.style.background = "none";
-            btn1.style.color ="none";
-            firstDiv.style.display = "none";
-        }
-};
-document.getElementById("btn1").onclick = function() {
-        var firstDiv = document.getElementById("education1");
-        var secondDiv = document.getElementById("experiances1");
-        var img2 = document.getElementById("img2");
-        var img1 = document.getElementById("img1");
-        var btn2 = document.getElementById("btn2");
-        var btn1 = document.getElementById("btn1");
-        if (firstDiv.style.display === "none") {
-            firstDiv.style.display = "block";
-            firstDiv.style.display = "inline-block";
-            img1.style.display = "block";
-            img1.style.display = "inline-block";
-            img2.style.display = "none";
-            btn2.style.background = "none";
-            btn2.style.color ="none";
-            btn1.style.backgroundImage = "linear-gradient(0deg, #50a3a2 0%, #70e2b2 100%)";
-            btn1.style.color = "white";
-            secondDiv.style.display = "none";
-        }
-};
-
-const rows = Array.from(document.querySelectorAll('tr'));
-
-function slideOut(row) {
-  row.classList.add('slide-out');
-}
-
-function slideIn(row, index) {
-  setTimeout(function() {
-    row.classList.remove('slide-out');
-  }, (index + 5) * 200);  
-}
-
-rows.forEach(slideOut);
-
-rows.forEach(slideIn);
-</script>
+<!-- JavaScript Code -->
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
