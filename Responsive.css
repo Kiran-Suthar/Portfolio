@@ -1,0 +1,40 @@
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 600px) {
+  .flex-container2 {
+    flex-direction: column;
+  }
+  .skills{
+    text-align: center;
+    text-decoration:underline;
+  }
+  .skills_page{
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 1s;
+    transition-delay: 0.4s;
+  }
+  .scroll-skills_page {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .flex-container2 {
+    flex-wrap: wrap;
+  }
+  .skills{
+    text-align: center;
+    text-decoration:underline;
+  }
+  .skills_page{
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 1s;
+    transition-delay: 0.4s;
+  }
+  .scroll-skills_page {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
